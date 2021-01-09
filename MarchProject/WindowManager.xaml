@@ -1,0 +1,32 @@
+﻿<Window x:Class="MarchProject.WindowManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarchProject"
+        mc:Ignorable="d"
+        Title="WindowManager" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#FF744F4F">
+            <Image Source="Resources/VINNIPUH.png" HorizontalAlignment="Left" Margin="5,0,0,0" ></Image>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                <Button Click="Button_Click_Main">Главная</Button>
+                <Button Margin="5,0,0,0" Click="Button_Click_AddOtchet">Создать отчёт</Button>
+                <Button Margin="5,0,0,0" Click="Button_Click_LinkOtchet">Показать список отчётов</Button>
+                <Button Click="Button_Click_Exit" Margin="5,0,0,0">Выйти</Button>
+                <Button Click="Button_Click_Out" Margin="5,0,0,0">Выход</Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row ="2" Background="#FF744F4F">
+
+        </Grid>
+        <Frame Grid.Row="1" Name="ManagerFrame">
+
+        </Frame>
+    </Grid>
+</Window>
